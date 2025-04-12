@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Test Socionique - DCNH -</title>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+      font-family: sans-serif;
+      margin: 2rem;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    .question {
+      margin-bottom: 1.5rem;
+    }
+    .results {
+      display: none;
+      border-top: 1px solid #ccc;
+      margin-top: 2rem;
+      padding-top: 1rem;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+    a {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+<h1>Quel est ton sous-type DCNH ? 
+   PAR Eternal XDDD</h1>
+<form id="quizForm">
+<!-- Questions 1 à 20 -->
+<div class="question">
+<p>1. Quelle approche préfères-tu pour faire avancer un projet en difficulté ?</p>
+<label><input name="q1" type="radio" value="Dominant"/> Prendre le leadership et impulser une décision ferme.</label><br/>
+<label><input name="q1" type="radio" value="Normalizing"/> Analyser ce qui ne marche pas dans la structure et stabiliser.</label><br/>
+<label><input name="q1" type="radio" value="Harmonizing"/> Harmoniser les relations humaines en priorité.</label><br/>
+<label><input name="q1" type="radio" value="Creative"/> Créer un nouveau cadre spontané pour relancer l’élan.</label>
+</div>
+<div class="question">
+<p>2. Quel type de communication te semble le plus naturel ?</p>
+<label><input name="q2" type="radio" value="Harmonizing"/> Clarté émotionnelle, gestes doux, ton paisible.</label><br/>
+<label><input name="q2" type="radio" value="Dominant"/> Direct, factuel, rapide, presque sec.</label><br/>
+<label><input name="q2" type="radio" value="Creative"/> Adaptatif, énergique, expressif.</label><br/>
+<label><input name="q2" type="radio" value="Normalizing"/> Calme, précis, structuré.</label>
+</div>
+<div class="question">
+<p>3. Dans un groupe, ton rôle spontané est souvent :</p>
+<label><input name="q3" type="radio" value="Normalizing"/> Organiser les tâches de façon méthodique.</label><br/>
+<label><input name="q3" type="radio" value="Harmonizing"/> Apaiser les conflits, capter les besoins implicites.</label><br/>
+<label><input name="q3" type="radio" value="Creative"/> Proposer des idées originales, initier le mouvement.</label><br/>
+<label><input name="q3" type="radio" value="Dominant"/> Motiver, secouer, trancher s’il le faut.</label>
+</div>
+<div class="question">
+<p>4. Quelle est ta priorité quand tu entres dans un nouvel environnement ?</p>
+<label><input name="q4" type="radio" value="Harmonizing"/> T’assurer que tout le monde se sente bien.</label><br/>
+<label><input name="q4" type="radio" value="Normalizing"/> Identifier les règles implicites pour t’y adapter.</label><br/>
+<label><input name="q4" type="radio" value="Dominant"/> Repérer où tu peux prendre l’initiative.</label><br/>
+<label><input name="q4" type="radio" value="Creative"/> Observer qui influence qui, et entrer en lien avec les bons interlocuteurs.</label>
+</div>
+<div class="question">
+<p>5. Tu préfères qu’on dise de toi que tu es...</p>
+<label><input name="q5" type="radio" value="Normalizing"/> Stable, cohérent et digne de confiance.</label><br/>
+<label><input name="q5" type="radio" value="Creative"/> Innovant, rapide, toujours dans le mouvement.</label><br/>
+<label><input name="q5" type="radio" value="Harmonizing"/> Sensible, fin, attentionné.</label><br/>
+<label><input name="q5" type="radio" value="Dominant"/> Efficace, tranchant, moteur.</label>
+</div>
+<div class="question">
+<p>6. Face à une forte pression externe, tu as tendance à :</p>
+<label><input name="q6" type="radio" value="Dominant"/> Canaliser la pression et agir immédiatement.</label><br/>
+<label><input name="q6" type="radio" value="Harmonizing"/> Laisser couler, ressentir, te replier pour te recentrer.</label><br/>
+<label><input name="q6" type="radio" value="Creative"/> La contourner en changeant la dynamique sociale.</label><br/>
+<label><input name="q6" type="radio" value="Normalizing"/> Chercher une méthode ou un système pour y répondre rationnellement.</label>
+</div>
+<div class="question">
+<p>7. Ce qui te fatigue le plus :</p>
+<label><input name="q7" type="radio" value="Normalizing"/> L’ambiguïté émotionnelle constante.</label><br/>
+<label><input name="q7" type="radio" value="Dominant"/> Le manque de rythme ou de challenge.</label><br/>
+<label><input name="q7" type="radio" value="Harmonizing"/> Les tensions ou conflits non résolus.</label><br/>
+<label><input name="q7" type="radio" value="Creative"/> La routine trop rigide.</label>
+</div>
+<div class="question">
+<p>8. Si tu étais une métaphore professionnelle, tu serais :</p>
+<label><input name="q8" type="radio" value="Normalizing"/> L’ingénieur qui stabilise la structure.</label><br/>
+<label><input name="q8" type="radio" value="Dominant"/> Le coach qui bouscule les résistances.</label><br/>
+<label><input name="q8" type="radio" value="Harmonizing"/> Le médiateur invisible mais indispensable.</label><br/>
+<label><input name="q8" type="radio" value="Creative"/> L’ambassadeur improvisateur.</label>
+</div>
+<div class="question">
+<p>9. Tu ressens plus de satisfaction quand :</p>
+<label><input name="q9" type="radio" value="Harmonizing"/> Tu crées une ambiance harmonieuse.</label><br/>
+<label><input name="q9" type="radio" value="Dominant"/> Tu règles un conflit ou débloques un obstacle.</label><br/>
+<label><input name="q9" type="radio" value="Creative"/> Tu proposes une idée originale qui inspire.</label><br/>
+<label><input name="q9" type="radio" value="Normalizing"/> Tu vois qu’un système fonctionne grâce à ta rigueur.</label>
+</div>
+<div class="question">
+<p>10. Tu es le plus à l’aise quand :</p>
+<label><input name="q10" type="radio" value="Creative"/> L’environnement est fluide et non structuré.</label><br/>
+<label><input name="q10" type="radio" value="Normalizing"/> Il y a des balises et des règles précises.</label><br/>
+<label><input name="q10" type="radio" value="Harmonizing"/> Les gens sont connectés sans tension.</label><br/>
+<label><input name="q10" type="radio" value="Dominant"/> Il y a une cible claire à atteindre.</label>
+</div>
+<div class="question">
+<p>11. Ta posture naturelle face à l’inconnu :</p>
+<label><input name="q11" type="radio" value="Dominant"/> Imposer un cap, improviser si besoin.</label><br/>
+<label><input name="q11" type="radio" value="Creative"/> Décoder les signaux humains, jouer relationnellement.</label><br/>
+<label><input name="q11" type="radio" value="Harmonizing"/> Sentir, attendre, ajuster en douceur.</label><br/>
+<label><input name="q11" type="radio" value="Normalizing"/> Analyser les paramètres et sécuriser un cadre.</label>
+</div>
+<div class="question">
+<p>12. Dans ton travail, ce que tu valorises le plus :</p>
+<label><input name="q12" type="radio" value="Dominant"/> L’impact visible de tes actions.</label><br/>
+<label><input name="q12" type="radio" value="Harmonizing"/> L’équilibre émotionnel et esthétique.</label><br/>
+<label><input name="q12" type="radio" value="Normalizing"/> La cohérence, la logique, l’ordre.</label><br/>
+<label><input name="q12" type="radio" value="Creative"/> La flexibilité, les rencontres, la variété.</label>
+</div>
+<div class="question">
+<p>13. Ton dialogue intérieur ressemble à :</p>
+<label><input name="q13" type="radio" value="Dominant"/> « Agis maintenant, on ajustera plus tard. »</label><br/>
+<label><input name="q13" type="radio" value="Harmonizing"/> « Ce que je ressens est subtil mais réel. »</label><br/>
+<label><input name="q13" type="radio" value="Normalizing"/> « Il y a forcément une structure plus efficace. »</label><br/>
+<label><input name="q13" type="radio" value="Creative"/> « Et si on faisait complètement autrement ? »</label>
+</div>
+<div class="question">
+<p>14. Ton influence sociale est plutôt :</p>
+<label><input name="q14" type="radio" value="Normalizing"/> Structurante par ta constance.</label><br/>
+<label><input name="q14" type="radio" value="Harmonizing"/> Silencieuse, par ton écoute et ton regard.</label><br/>
+<label><input name="q14" type="radio" value="Dominant"/> Visible, tu lances le mouvement.</label><br/>
+<label><input name="q14" type="radio" value="Creative"/> Spontanée, par ton adaptabilité fluide.</label>
+</div>
+<div class="question">
+<p>15. Tu pourrais être irrité par quelqu’un qui...</p>
+<label><input name="q15" type="radio" value="Normalizing"/> Improvise tout le temps sans structure.</label><br/>
+<label><input name="q15" type="radio" value="Dominant"/> Reste trop vague et évite les décisions.</label><br/>
+<label><input name="q15" type="radio" value="Harmonizing"/> Crée des tensions inutiles dans le groupe.</label><br/>
+<label><input name="q15" type="radio" value="Creative"/> Suit les règles sans jamais les questionner.</label>
+</div>
+<div class="question">
+<p>16. Tu as tendance à...</p>
+<label><input name="q16" type="radio" value="Harmonizing"/> Chercher à comprendre ce que ressentent les autres.</label><br/>
+<label><input name="q16" type="radio" value="Normalizing"/> Organiser, planifier, prévoir.</label><br/>
+<label><input name="q16" type="radio" value="Dominant"/> Influencer, décider, cadrer.</label><br/>
+<label><input name="q16" type="radio" value="Creative"/> Jouer avec les codes sociaux pour t’ajuster à chacun.</label>
+</div>
+<div class="question">
+<p>17. En cas de conflit latent...</p>
+<label><input name="q17" type="radio" value="Creative"/> Tu le désamorces par l’humour ou le lien.</label><br/>
+<label><input name="q17" type="radio" value="Normalizing"/> Tu veux comprendre la structure sous-jacente du problème.</label><br/>
+<label><input name="q17" type="radio" value="Harmonizing"/> Tu ressens fortement les non-dits et tu cherches l’apaisement.</label><br/>
+<label><input name="q17" type="radio" value="Dominant"/> Tu l’affrontes directement pour aller droit au but.</label>
+</div>
+<div class="question">
+<p>18. Ce que tu remarques en premier chez une personne :</p>
+<label><input name="q18" type="radio" value="Dominant"/> Son autorité ou sa capacité à décider.</label><br/>
+<label><input name="q18" type="radio" value="Normalizing"/> Sa logique, sa rigueur interne.</label><br/>
+<label><input name="q18" type="radio" value="Harmonizing"/> Son état émotionnel et son ambiance intérieure.</label><br/>
+<label><input name="q18" type="radio" value="Creative"/> Sa capacité d’adaptation ou son jeu social.</label>
+</div>
+<div class="question">
+<p>19. Ta manière de gérer l’incertitude :</p>
+<label><input name="q19" type="radio" value="Dominant"/> Tu accélères pour prendre le dessus.</label><br/>
+<label><input name="q19" type="radio" value="Creative"/> Tu adaptes ton discours en fonction du public.</label><br/>
+<label><input name="q19" type="radio" value="Harmonizing"/> Tu mets tout en pause pour ressentir ce qui se joue.</label><br/>
+<label><input name="q19" type="radio" value="Normalizing"/> Tu relies la situation à des principes rationnels.</label>
+</div>
+<div class="question">
+<p>20. Tu penses que les gens te voient comme :</p>
+<label><input name="q20" type="radio" value="Harmonizing"/> Une personne sensible, discrète, rassurante.</label><br/>
+<label><input name="q20" type="radio" value="Normalizing"/> Une personne méthodique, fiable, prévisible.</label><br/>
+<label><input name="q20" type="radio" value="Dominant"/> Une personne intense, directe, affirmée.</label><br/>
+<label><input name="q20" type="radio" value="Creative"/> Une personne fluide, vivante, amusante.</label>
+</div>
+<!-- BOUTON -->
+<div class="question"><p>21. Tu es élève dans un cours qui t’ennuie profondément. Tu...</p><label><input name="q21" type="radio" value="Creative"/> Cherches une manière ludique ou inattendue de l’aborder.</label><br/><label><input name="q21" type="radio" value="Normalizing"/> Respectes les consignes et t’organises pour réussir malgré tout.</label><br/><label><input name="q21" type="radio" value="Harmonizing"/> Rêvasses en captant l’ambiance émotionnelle autour de toi.</label><br/><label><input name="q21" type="radio" value="Dominant"/> Provoques un changement dans le cours ou tu passes à l’action.</label><br/></div><div class="question"><p>22. Un proche te demande un service qui ne t’arrange pas. Tu...</p><label><input name="q22" type="radio" value="Dominant"/> Refuses fermement si ça te semble déraisonnable.</label><br/><label><input name="q22" type="radio" value="Harmonizing"/> Te sens tiraillé, tu cherches à préserver l’harmonie.</label><br/><label><input name="q22" type="radio" value="Creative"/> Tentes de trouver une solution créative pour satisfaire tout le monde.</label><br/><label><input name="q22" type="radio" value="Normalizing"/> Expliques calmement pourquoi tu ne peux pas, en restant poli.</label><br/></div><div class="question"><p>23. Tu dois prendre une décision rapide sans toutes les informations. Tu...</p><label><input name="q23" type="radio" value="Creative"/> Te fies à ton instinct relationnel et improvises.</label><br/><label><input name="q23" type="radio" value="Normalizing"/> Tentes de rassembler les données minimales pour structurer ton choix.</label><br/><label><input name="q23" type="radio" value="Dominant"/> Tranches rapidement, quitte à corriger ensuite.</label><br/><label><input name="q23" type="radio" value="Harmonizing"/> Attends un signe ou un ressenti plus clair avant d’agir.</label><br/></div><div class="question"><p>24. Tu viens de te faire klaxonner dans la rue sans raison. Ta réaction ?</p><label><input name="q24" type="radio" value="Dominant"/> Tu te retournes, prêt à confronter.</label><br/><label><input name="q24" type="radio" value="Creative"/> Tu réponds par une réplique ou un geste inattendu.</label><br/><label><input name="q24" type="radio" value="Normalizing"/> Tu évalues la situation en silence.</label><br/><label><input name="q24" type="radio" value="Harmonizing"/> Tu ressens un malaise mais ne réagis pas.</label><br/></div><div class="question"><p>25. Un ami te confie un problème existentiel. Ta façon d’aider ?</p><label><input name="q25" type="radio" value="Harmonizing"/> Tu écoutes en profondeur, sans juger.</label><br/><label><input name="q25" type="radio" value="Creative"/> Tu lui proposes un autre angle, un récit ou une image parlante.</label><br/><label><input name="q25" type="radio" value="Normalizing"/> Tu l’aides à structurer sa pensée pour voir plus clair.</label><br/><label><input name="q25" type="radio" value="Dominant"/> Tu l’incites à agir sans trop s’attarder.</label><br/></div><div class="question"><p>26. Tu dois manager une équipe qui s’oppose à tes idées. Tu...</p><label><input name="q26" type="radio" value="Dominant"/> Maintiens ta position et poses des limites.</label><br/><label><input name="q26" type="radio" value="Harmonizing"/> Cherches à t’adapter pour ne pas froisser.</label><br/><label><input name="q26" type="radio" value="Creative"/> Reformules ton projet pour qu’il leur parle.</label><br/><label><input name="q26" type="radio" value="Normalizing"/> Rétablis une structure et redistribues les tâches.</label><br/></div><div class="question"><p>27. Tu dois faire un choix de carrière. Tu t’appuies sur...</p><label><input name="q27" type="radio" value="Normalizing"/> La logique, les compétences stables que tu maîtrises.</label><br/><label><input name="q27" type="radio" value="Dominant"/> Ton envie de challenge et de progression rapide.</label><br/><label><input name="q27" type="radio" value="Harmonizing"/> Ton besoin d’un cadre émotionnel paisible.</label><br/><label><input name="q27" type="radio" value="Creative"/> L’intuition de ce qui t’inspirera à chaque instant.</label><br/></div><div class="question"><p>28. En réunion, on t’interrompt constamment. Tu...</p><label><input name="q28" type="radio" value="Dominant"/> Reprends le contrôle de la parole.</label><br/><label><input name="q28" type="radio" value="Harmonizing"/> Te tais et te sens blessé intérieurement.</label><br/><label><input name="q28" type="radio" value="Creative"/> Réagis avec humour ou détournes la situation.</label><br/><label><input name="q28" type="radio" value="Normalizing"/> Tu notes ce qui t’a coupé et tu reviens dessus plus tard.</label><br/></div><div class="question"><p>29. Un imprévu chamboule ton agenda bien organisé. Tu...</p><label><input name="q29" type="radio" value="Normalizing"/> Ressens un stress lié au manque de structure.</label><br/><label><input name="q29" type="radio" value="Creative"/> T’en sors par une adaptation rapide et originale.</label><br/><label><input name="q29" type="radio" value="Dominant"/> T’organises immédiatement une alternative claire.</label><br/><label><input name="q29" type="radio" value="Harmonizing"/> Cherches à rester calme et à garder l’harmonie intérieure.</label><br/></div><div class="question"><p>30. Tu es dans un débat vif avec quelqu’un que tu apprécies. Tu...</p><label><input name="q30" type="radio" value="Creative"/> Te focalises sur le lien, pas sur l’issue.</label><br/><label><input name="q30" type="radio" value="Dominant"/> Veux montrer que tu as raison, sans détour.</label><br/><label><input name="q30" type="radio" value="Harmonizing"/> Ralentis le débat pour éviter la blessure.</label><br/><label><input name="q30" type="radio" value="Normalizing"/> Reviens aux faits, aux principes, pour objectiver.</label><br/></div><button onclick="calculateResults()" type="button">Voir mes résultats</button>
+</form>
+<div class="results" id="results"></div>
+</div> <!-- fermeture container -->
+<script>
+  // (code JavaScript inchangé ici)
+  </script>
+<script>
+    const descriptions = {
+      Dominant: `🟥 <strong>Dominant – Motivator</strong><br><br>
+      🧩 Description générale :
+Le sous-type dominant est énergique, affirmé et dirigé vers l’action. Il se positionne naturellement en tête du mouvement, prenant des décisions rapides et se concentrant sur l’efficacité avant tout. Il n’attend pas la permission pour agir, et peut parfois paraître trop brusque ou direct dans sa manière de faire. Ce type cherche à avoir un impact visible sur le monde, quitte à entrer en confrontation. Sa communication est courte, tranchante, sans fioriture. Il évite les situations ambigües et supporte mal les lenteurs ou hésitations.
+
+✅ 10 traits significatifs :
+Oriente l’énergie vers des résultats immédiats
+
+Ne craint pas le conflit si cela mène à une avancée
+
+Décide vite, corrige plus tard si besoin
+
+Tendance à imposer sa volonté sans consulter
+
+Discours ferme, direct, souvent sans détour
+
+Se positionne instinctivement en leader
+
+Tolérance très basse à l’inefficacité
+
+Soutient difficilement les règles rigides (il préfère diriger)
+
+Cherche à transformer la réalité plus qu’à la comprendre
+
+Peut avoir une image autoritaire ou intimidante<br><br>
+      🔗 <a href="https://wiki.personality-database.com/books/socionics/page/dominant-subtype-motivator" target="_blank">Voir la fiche complète</a>`,
+  
+      Normalizing: `🟦 <strong>Normalizing – Conscience</strong><br><br>
+      🧩 Description générale :
+Le sous-type normalisant est structuré, méthodique et fidèle à des principes stables. Il valorise la cohérence, la prévisibilité et le respect des règles ou normes. Il ne cherche pas la mise en avant personnelle, mais à faire fonctionner correctement un système ou un cadre, parfois en arrière-plan. Très attaché à l’ordre, il préfère améliorer un cadre existant plutôt que d’innover radicalement. Il peut parfois paraître rigide, mais il est fiable, logique et d’une loyauté constante.
+
+✅ 10 traits significatifs :
+Besoin de cadre clair et de procédures stables
+
+Perfectionniste discret, attentif aux règles
+
+Fait primer la rationalité et la rigueur sur l’émotion
+
+Tolère difficilement les comportements imprévisibles
+
+Cherche la cohérence à long terme dans ses actions
+
+Fonctionne souvent dans l’ombre, sans besoin de reconnaissance
+
+Attachement fort aux normes morales ou professionnelles
+
+S’épanouit dans les environnements organisés
+
+Réflexion structurée, parfois lente mais solide
+
+Peut être perçu comme froid ou distant, à tort<br><br>
+      🔗 <a href="https://wiki.personality-database.com/books/socionics/page/normalizing-subtype-conscience" target="_blank">Voir la fiche complète</a>`,
+  
+      Harmonizing: `🟩 <strong>Harmonizing – Designer</strong><br><br>
+      🧩 Description générale :
+Le sous-type harmonisant est profondément sensible aux ambiances, aux émotions et aux nuances. Il préfère ajuster que confronter, écouter que diriger. Il observe finement le monde autour de lui, sans forcément s’y imposer. Il déteste les conflits ouverts, et préfère la diplomatie ou le retrait. Il a une forme d’intelligence esthétique, émotionnelle ou intérieure qui lui permet d’harmoniser discrètement les situations ou les groupes. Il peut paraître passif, mais il agit dans la finesse.
+
+✅ 10 traits significatifs :
+Perception fine des émotions et des atmosphères
+
+Réaction très forte aux tensions ou aux critiques
+
+Préfère apaiser que diriger ou imposer
+
+S’exprime par touches subtiles, souvent indirectement
+
+Grand sens du détail, de l’esthétique ou de la justesse
+
+Besoin de paix intérieure et de sécurité relationnelle
+
+Doute souvent de lui-même malgré ses talents réels
+
+Peut se fondre dans le groupe sans être visible
+
+Communication douce, posée, parfois poétique
+
+Fonctionne à l’intuition silencieuse plus qu’à la logique structurée<br><br>
+      🔗 <a href="https://wiki.personality-database.com/books/socionics/page/harmonizing-subtype-designer" target="_blank">Voir la fiche complète</a>`,
+  
+      Creative: `🟨 <strong>Creative – Contactor</strong><br><br>
+      🧩 Description générale :
+Le sous-type créatif est sociable, adaptable, toujours en mouvement, à l’aise dans la spontanéité et les environnements changeants. Il cherche le contact avec autrui, l’inspiration dans la nouveauté, et fuit l’ennui comme la peste. Il n’est pas forcément un leader, mais un facilitateur d’énergie sociale. Sa communication est souvent vive, humoristique ou provocante. Il fonctionne à l’intuition du moment, et a parfois du mal à se canaliser. Il agit par rebonds relationnels ou émotionnels, parfois au détriment de la structure.
+
+✅ 10 traits significatifs :
+Grande aisance à naviguer entre les groupes sociaux
+
+Impression d'être “partout et nulle part à la fois”
+
+Capacité à improviser, réagir, rebondir rapidement
+
+Aime surprendre ou détourner les règles
+
+Communication fluide, captivante, parfois théâtrale
+
+Peut être instable ou dispersé émotionnellement
+
+Rejette la routine ou la monotonie
+
+S’appuie plus sur l’intuition que la logique
+
+Excellente perception de l’ambiance relationnelle
+
+Crée des ponts entre les personnes ou les idées<br><br>
+      🔗 <a href="https://wiki.personality-database.com/books/socionics/page/creative-subtype-contactor" target="_blank">Voir la fiche complète</a>`
+    };
+  
+    function calculateResults() {
+      const form = document.getElementById('quizForm');
+      const formData = new FormData(form);
+      const counts = { Dominant: 0, Normalizing: 0, Harmonizing: 0, Creative: 0 };
+  
+      for (const [name, value] of formData.entries()) {
+        if (value in counts) counts[value]++;
+      }
+  
+      let max = 0;
+      let result = "Aucun"; // fallback
+      for (const [type, score] of Object.entries(counts)) {
+        if (score > max) {
+          max = score;
+          result = type;
+        }
+      }
+  
+      const resultBox = document.getElementById('results');
+      resultBox.innerHTML = descriptions[result] || "Merci de répondre à toutes les questions.";
+      resultBox.style.display = "block";
+    }
+  </script>
+</body>
+</html>
